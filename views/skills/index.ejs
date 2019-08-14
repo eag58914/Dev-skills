@@ -2,11 +2,18 @@
 <html lang="en">
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Skills</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
+    <h1>Technologies</h1>
+    <ul>
+      <% skills.forEach(function(s, idx){ %>
+        <li>
+          <a href="/skills/<%= idx %>"><%= s.skill %></a>
+          <%}); %>
+        </li>
+    </ul>
     <a href="/skills">Skills/a>
   </body>
 </html>

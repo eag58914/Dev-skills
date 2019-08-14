@@ -4,5 +4,5 @@ module.exports = {
 	getAll
 };
 function getAll() {
-	return todos;
+	return skills;
 }
