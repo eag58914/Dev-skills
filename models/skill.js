@@ -17,9 +17,13 @@ const skills = [
 ];
 
 module.exports = {
-	find
+	find,
+	create
 };
 
 function find() {
 	return skills;
+}
+function create(skill) {
+	skills.push(skill);
 }

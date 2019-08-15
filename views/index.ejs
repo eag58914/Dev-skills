@@ -9,11 +9,9 @@
 <body>
 <h1>My Dev Skills</h1>
   <% skills.forEach(function(s){ %>
-    <a href="/skills/<%= s.id %>">
                 <li><%=s.skill %></li>
-            </a>
-      
         <% }); %>
+        <a href="/new">Add Skill</a>
 </ul>
 </body>
 </html>
