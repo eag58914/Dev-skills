@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>My <%= title %> as a developer</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev Skillz</title>
+</head>
+<body>
+<h1>My Dev Skills</h1>
+  <% skills.forEach(function(s){ %>
+    <a href="/skills/<%= s.id %>">
+                <li><%=s.skill %></li>
+            </a>
+      
+        <% }); %>
+</ul>
+</body>
 </html>

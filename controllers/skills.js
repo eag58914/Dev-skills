@@ -1,16 +1,11 @@
-var Skill = require('../models/skill');
+const Skill = require('../models/skill');
 
 module.exports = {
-	index,
-	show
+	getAll
 };
-function show() {
-	res.render('skills/show', {
-		skill: Skill.getOne(req.params.id)
-	});
-}
-function index(req, res) {
-	res.render('skills/index', {
-		skills: Skill.getAll()
+
+function getAll(req, res) {
+	res.render('index', {
+		skills: Skill.find()
 	});
 }
